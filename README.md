@@ -161,7 +161,7 @@ const tableIcons = {
     ViewColumn: forwardRef((props, ref) => <ViewColumn {...props} ref={ref} />)
   };
 
-<MaterialTable
+<MaterialTableSlzno
   icons={tableIcons}
   ...
 />
@@ -174,13 +174,13 @@ Here is a basic example of using material-table within a react application.
 ```jsx
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import MaterialTable from "material-table";
+import MaterialTableSlzno from "material-table";
 
 class App extends Component {
   render() {
     return (
       <div style={{ maxWidth: "100%" }}>
-        <MaterialTable
+        <MaterialTableSlzno
           columns={[
             { title: "Adı", field: "name" },
             { title: "Soyadı", field: "surname" },

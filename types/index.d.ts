@@ -5,7 +5,7 @@ import { string } from "prop-types";
 
 type SvgIconComponent = typeof SvgIcon;
 
-export interface MaterialTableProps<RowData extends object> {
+export interface MaterialTableSlznoProps<RowData extends object> {
   actions?: (Action<RowData> | ((rowData: RowData) => Action<RowData>))[];
   cellEditable?: {
     cellStyle?: React.CSSProperties;
@@ -413,6 +413,6 @@ export interface Localization {
   };
 }
 
-export default class MaterialTable<
+export default class MaterialTableSlzno<
   RowData extends object
-> extends React.Component<MaterialTableProps<RowData>> {}
+> extends React.Component<MaterialTableSlznoProps<RowData>> {}

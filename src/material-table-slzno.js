@@ -15,7 +15,7 @@ import * as CommonValues from "./utils/common-values";
 
 /* eslint-enable no-unused-vars */
 
-export default class MaterialTable extends React.Component {
+export default class MaterialTableSlzno extends React.Component {
   dataManager = new DataManager();
 
   constructor(props) {
@@ -164,20 +164,20 @@ export default class MaterialTable extends React.Component {
   getProps(props) {
     const calculatedProps = { ...(props || this.props) };
     calculatedProps.components = {
-      ...MaterialTable.defaultProps.components,
+      ...MaterialTableSlzno.defaultProps.components,
       ...calculatedProps.components,
     };
     calculatedProps.icons = {
-      ...MaterialTable.defaultProps.icons,
+      ...MaterialTableSlzno.defaultProps.icons,
       ...calculatedProps.icons,
     };
     calculatedProps.options = {
-      ...MaterialTable.defaultProps.options,
+      ...MaterialTableSlzno.defaultProps.options,
       ...calculatedProps.options,
     };
 
     const localization = {
-      ...MaterialTable.defaultProps.localization.body,
+      ...MaterialTableSlzno.defaultProps.localization.body,
       ...calculatedProps.localization.body,
     };
 
@@ -598,7 +598,7 @@ export default class MaterialTable extends React.Component {
         })
         .catch((error) => {
           const localization = {
-            ...MaterialTable.defaultProps.localization,
+            ...MaterialTableSlzno.defaultProps.localization,
             ...this.props.localization,
           };
           const errorState = {
@@ -728,7 +728,7 @@ export default class MaterialTable extends React.Component {
     const props = this.getProps();
     if (props.options.paging) {
       const localization = {
-        ...MaterialTable.defaultProps.localization.pagination,
+        ...MaterialTableSlzno.defaultProps.localization.pagination,
         ...this.props.localization.pagination,
       };
 
@@ -825,7 +825,7 @@ export default class MaterialTable extends React.Component {
         <props.components.Header
           actions={props.actions}
           localization={{
-            ...MaterialTable.defaultProps.localization.header,
+            ...MaterialTableSlzno.defaultProps.localization.header,
             ...this.props.localization.header,
           }}
           columns={this.state.columns}
@@ -889,7 +889,7 @@ export default class MaterialTable extends React.Component {
         onEditingCanceled={this.onEditingCanceled}
         onEditingApproved={this.onEditingApproved}
         localization={{
-          ...MaterialTable.defaultProps.localization.body,
+          ...MaterialTableSlzno.defaultProps.localization.body,
           ...this.props.localization.body,
         }}
         onRowClick={this.props.onRowClick}
@@ -1005,7 +1005,7 @@ export default class MaterialTable extends React.Component {
               dataManager={this.dataManager}
               onColumnsChanged={this.onChangeColumnHidden}
               localization={{
-                ...MaterialTable.defaultProps.localization.toolbar,
+                ...MaterialTableSlzno.defaultProps.localization.toolbar,
                 ...this.props.localization.toolbar,
               }}
             />
@@ -1014,7 +1014,7 @@ export default class MaterialTable extends React.Component {
             <props.components.Groupbar
               icons={props.icons}
               localization={{
-                ...MaterialTable.defaultProps.localization.grouping,
+                ...MaterialTableSlzno.defaultProps.localization.grouping,
                 ...props.localization.grouping,
               }}
               groupColumns={this.state.columns
