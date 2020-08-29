@@ -1,6 +1,6 @@
 {
   "name": "material-table-slzno",
-  "version": "1.69.0",
+  "version": "1.69.1",
   "description": "Datatable for React based on https://material-ui.com/api/table/ with additional features",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
@@ -36,12 +36,9 @@
     "datatable",
     "table"
   ],
-  "author": "Mehmet Baran",
+  "author": "Luis Solorzano",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mbrn/material-table/issues"
-  },
-  "homepage": "https://github.com/mbrn/material-table#readme",
+  "homepage": "https://github.com/ldavidsp/material-table#readme",
   "devDependencies": {
     "@babel/cli": "7.10.5",
     "@babel/core": "7.11.4",
