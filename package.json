@@ -86,6 +86,11 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && pretty-quick --staged"
+    }
+  },
   "bugs": {
     "url": "https://github.com/ldavidsp/material-table-slzno/issues"
   }
