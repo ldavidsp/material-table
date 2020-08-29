@@ -37,8 +37,8 @@
     "table"
   ],
   "author": "Luis Solorzano",
-  "license": "MIT",
-  "homepage": "https://github.com/ldavidsp/material-table#readme",
+  "license": "ISC",
+  "homepage": "https://github.com/ldavidsp/material-table-slzno#readme",
   "devDependencies": {
     "@babel/cli": "7.10.5",
     "@babel/core": "7.11.4",
